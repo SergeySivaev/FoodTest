@@ -17,17 +17,19 @@ class FoodListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Recipes"
+        
         let nib = UINib.init(nibName: "FoodListTableViewCell", bundle: nil)
         listTableView.register(nib, forCellReuseIdentifier: "Cell")
         
         listTableView.delegate = self
         listTableView.dataSource = self
+        
   
     }
 }
 extension FoodListViewController: FoodListViewProtocol {
     func refresh() {
-        //listTableView.reloadData()
     }
 
 }
@@ -48,8 +50,6 @@ extension FoodListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter.didSelectRow(indexPath: indexPath)
-        
-        
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

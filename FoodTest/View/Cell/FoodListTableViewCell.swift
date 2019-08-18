@@ -18,9 +18,10 @@ class FoodListTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        avaImageView.layer.cornerRadius = 32
+        avaImageView.layer.cornerRadius = 30
         avaImageView.clipsToBounds = true
-        
+        rankLabel.layer.cornerRadius = 5
+        rankLabel.clipsToBounds = true
     }
     
     func configur(param: Recipe) {
@@ -31,7 +32,7 @@ class FoodListTableViewCell: UITableViewCell {
         publisherLabel.text = publisher
         
         let rank = param.socialRank
-        rankLabel.text = String("rank \(rank)")
+        rankLabel.text = String("⭐️ \(rank)")
 
         
         let image = param.imageUrl
@@ -41,5 +42,4 @@ class FoodListTableViewCell: UITableViewCell {
             self.avaImageView.image = image
         }
     }
-    
 }
