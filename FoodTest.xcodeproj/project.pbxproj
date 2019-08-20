@@ -11,15 +11,15 @@
 		FA03A65423044B1300D27972 /* FoodDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03A65323044B1300D27972 /* FoodDetailPresenter.swift */; };
 		FA03A65C23045E6900D27972 /* FoodListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03A65A23045E6900D27972 /* FoodListTableViewCell.swift */; };
 		FA03A65D23045E6900D27972 /* FoodListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA03A65B23045E6900D27972 /* FoodListTableViewCell.xib */; };
-		FA03A660230465DE00D27972 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03A65F230465DE00D27972 /* ImageService.swift */; };
+		FA03A660230465DE00D27972 /* AlamofireImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03A65F230465DE00D27972 /* AlamofireImageService.swift */; };
 		FA03A66423052A6A00D27972 /* FoodListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA03A66223052A6A00D27972 /* FoodListViewController.xib */; };
+		FA056720230BEB59001683F0 /* ReachabilityConection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05671F230BEB59001683F0 /* ReachabilityConection.swift */; };
 		FAAD91502302EA6F006A5185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD914F2302EA6F006A5185 /* AppDelegate.swift */; };
 		FAAD91522302EA6F006A5185 /* FoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD91512302EA6F006A5185 /* FoodListViewController.swift */; };
 		FAAD91552302EA6F006A5185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD91532302EA6F006A5185 /* Main.storyboard */; };
 		FAAD91572302EA71006A5185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAD91562302EA71006A5185 /* Assets.xcassets */; };
 		FAAD915A2302EA71006A5185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD91582302EA71006A5185 /* LaunchScreen.storyboard */; };
 		FAAD91622302FEB2006A5185 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD91612302FEB2006A5185 /* FoodList.swift */; };
-		FAAD9164230308E2006A5185 /* FoodDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD9163230308E2006A5185 /* FoodDetails.swift */; };
 		FAAD916623030E9C006A5185 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD916523030E9C006A5185 /* NetworkService.swift */; };
 		FAAD916A23041F1D006A5185 /* FoodListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD916923041F1D006A5185 /* FoodListPresenter.swift */; };
 		FAF12869230560F0002A4943 /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF12867230560F0002A4943 /* FoodDetailViewController.swift */; };
@@ -37,8 +37,9 @@
 		FA03A65323044B1300D27972 /* FoodDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailPresenter.swift; sourceTree = "<group>"; };
 		FA03A65A23045E6900D27972 /* FoodListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListTableViewCell.swift; sourceTree = "<group>"; };
 		FA03A65B23045E6900D27972 /* FoodListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodListTableViewCell.xib; sourceTree = "<group>"; };
-		FA03A65F230465DE00D27972 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		FA03A65F230465DE00D27972 /* AlamofireImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireImageService.swift; sourceTree = "<group>"; };
 		FA03A66223052A6A00D27972 /* FoodListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodListViewController.xib; sourceTree = "<group>"; };
+		FA05671F230BEB59001683F0 /* ReachabilityConection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityConection.swift; sourceTree = "<group>"; };
 		FAAD914C2302EA6F006A5185 /* FoodTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAD914F2302EA6F006A5185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAD91512302EA6F006A5185 /* FoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		FAAD91592302EA71006A5185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAAD915B2302EA71006A5185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAAD91612302FEB2006A5185 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
-		FAAD9163230308E2006A5185 /* FoodDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetails.swift; sourceTree = "<group>"; };
 		FAAD916523030E9C006A5185 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FAAD916923041F1D006A5185 /* FoodListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListPresenter.swift; sourceTree = "<group>"; };
 		FAF12867230560F0002A4943 /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
@@ -149,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				FAAD91612302FEB2006A5185 /* FoodList.swift */,
-				FAAD9163230308E2006A5185 /* FoodDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,7 +158,8 @@
 			children = (
 				FAAD916523030E9C006A5185 /* NetworkService.swift */,
 				FAF95575230683A600B4A264 /* RealmService.swift */,
-				FA03A65F230465DE00D27972 /* ImageService.swift */,
+				FA03A65F230465DE00D27972 /* AlamofireImageService.swift */,
+				FA05671F230BEB59001683F0 /* ReachabilityConection.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -207,6 +207,11 @@
 				TargetAttributes = {
 					FAAD914B2302EA6F006A5185 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -278,6 +283,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FoodTest/Pods-FoodTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
@@ -286,6 +292,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -304,11 +311,11 @@
 				FAAD91622302FEB2006A5185 /* FoodList.swift in Sources */,
 				FAAD91522302EA6F006A5185 /* FoodListViewController.swift in Sources */,
 				FA03A65423044B1300D27972 /* FoodDetailPresenter.swift in Sources */,
+				FA056720230BEB59001683F0 /* ReachabilityConection.swift in Sources */,
 				FAF12869230560F0002A4943 /* FoodDetailViewController.swift in Sources */,
-				FA03A660230465DE00D27972 /* ImageService.swift in Sources */,
+				FA03A660230465DE00D27972 /* AlamofireImageService.swift in Sources */,
 				FAF128702305A2CF002A4943 /* MainRouter.swift in Sources */,
 				FAAD916A23041F1D006A5185 /* FoodListPresenter.swift in Sources */,
-				FAAD9164230308E2006A5185 /* FoodDetails.swift in Sources */,
 				FA03A65C23045E6900D27972 /* FoodListTableViewCell.swift in Sources */,
 				FAF95576230683A600B4A264 /* RealmService.swift in Sources */,
 				FAAD91502302EA6F006A5185 /* AppDelegate.swift in Sources */,
@@ -463,6 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7378LP24FU;
 				INFOPLIST_FILE = FoodTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,6 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7378LP24FU;
 				INFOPLIST_FILE = FoodTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

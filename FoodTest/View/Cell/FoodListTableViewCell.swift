@@ -9,7 +9,6 @@
 import UIKit
 
 class FoodListTableViewCell: UITableViewCell {
-
     @IBOutlet weak var avaImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var publisherLabel: UILabel!
@@ -33,13 +32,16 @@ class FoodListTableViewCell: UITableViewCell {
         
         let rank = param.socialRank
         rankLabel.text = String("⭐️ \(rank)")
-
         
         let image = param.imageUrl
         
-        ImageManager.loadImage(url: image) {[weak self] (image) in
-            guard let self = self else {return}
+        if let image = AlamofireImageService.imageCache.image(withIdentifier: image) {
             self.avaImageView.image = image
+        } else {
+            AlamofireImageService.loadImage(url: image) {[weak self] (image) in
+                guard let self = self else {return}
+                self.avaImageView.image = image
+            }
         }
     }
 }

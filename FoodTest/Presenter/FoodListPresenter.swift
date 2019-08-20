@@ -16,41 +16,45 @@ protocol FoodListViewProtocol: class {
 class FoodListPresenter {
     var networkService: NetworkService!
     var view: FoodListViewProtocol!
-    
     var recipes: Results<Recipe>?
-
-    
     var router: RouterProtocol?
+    var notificationToken: NotificationToken?
+    var imagePath: NSString?
     
     init(view: FoodListViewProtocol) {
         self.view = view
         self.networkService = NetworkService()
         getRecipes()
-        getRecipesFromRealm()
     }
     
     func getRecipes() {
-        networkService.search { foodList in
-            guard let array = foodList.recipes else { return }
+        networkService.search { foodList  in
+            guard let array = foodList?.recipes else { return }
             DispatchQueue.main.async {
                 RealmService.deleteAll()
                 RealmService.save(items: array)
+                self.getRecipesFromRealm()
             }
-            
         }
     }
     
     func getRecipesFromRealm() {
-        //достать данные из БД
+        self.recipes = try? RealmService.get(Recipe.self)
         
-        recipes = try? RealmService.get(Recipe.self)
-        self.view.refresh()
+        notificationToken = recipes?.observe { [weak self] changes in
+            guard let self = self else { return }
+            switch changes {
+            case .initial(_):
+                self.view.refresh()
+            case .update(_, _, _, _): break
+            case .error(_): break
+            }
+        }
     }
     
     func didSelectRow(indexPath: IndexPath) {
         if let recipes = recipes {
             router?.showRecipeDetail(recipe: recipes[indexPath.row])
         }
-        
     }
 }

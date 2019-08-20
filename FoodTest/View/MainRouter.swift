@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 protocol RouterProtocol: class {
     var navigationController: UINavigationController { get set }
     func showRecipeDetail(recipe: Recipe)
@@ -27,6 +26,5 @@ class MainRouter: RouterProtocol {
         vc.presenter.recipes.append(recipe)
         
         self.navigationController.pushViewController(vc, animated: true)
-        
     }
 }

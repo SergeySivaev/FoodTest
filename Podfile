@@ -8,5 +8,6 @@ target 'FoodTest' do
   # Pods for FoodTest
 pod 'RealmSwift'
 pod 'Alamofire'
+pod 'AlamofireImage'
 
 end

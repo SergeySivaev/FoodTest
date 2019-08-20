@@ -9,7 +9,6 @@
 import UIKit
 
 class FoodListViewController: UIViewController {
-    
     @IBOutlet weak var listTableView: UITableView!
     
     var presenter: FoodListPresenter!
@@ -17,24 +16,31 @@ class FoodListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        chackConnection()
         title = "Recipes"
-        
+        setupTableView()
+    }
+    
+    fileprivate func chackConnection() {
+        if Network.reachability.status == .unreachable {
+            self.presenter.getRecipesFromRealm()
+        }
+    }
+    
+    fileprivate func setupTableView() {
         let nib = UINib.init(nibName: "FoodListTableViewCell", bundle: nil)
         listTableView.register(nib, forCellReuseIdentifier: "Cell")
-        
         listTableView.delegate = self
         listTableView.dataSource = self
-        
-  
     }
+    
 }
 extension FoodListViewController: FoodListViewProtocol {
     func refresh() {
+        listTableView.reloadData()
     }
-
 }
 extension FoodListViewController: UITableViewDelegate, UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter.recipes?.count ?? 0
     }
@@ -52,6 +58,5 @@ extension FoodListViewController: UITableViewDelegate, UITableViewDataSource {
         presenter.didSelectRow(indexPath: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
 }
 

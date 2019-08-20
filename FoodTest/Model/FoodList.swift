@@ -12,7 +12,7 @@ import RealmSwift
 class FoodList: Decodable {
     var count: Int = 0
     var recipes: [Recipe]?
- 
+    
 }
 @objcMembers
 class Recipe: Object, Decodable {
