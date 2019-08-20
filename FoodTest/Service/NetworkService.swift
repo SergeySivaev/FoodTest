@@ -23,7 +23,6 @@ class NetworkService {
         ]
         
         Alamofire.request(url + path, method: .get, parameters: params).responseJSON { response in
-            
             if response.result.isSuccess {
                 guard let data = response.data else {return}
                 do{

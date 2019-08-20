@@ -28,7 +28,8 @@ class FoodListPresenter {
     }
     
     func getRecipes() {
-        networkService.search { foodList  in
+        networkService.search { [weak self] foodList  in
+            guard let self = self else { return }
             guard let array = foodList?.recipes else { return }
             DispatchQueue.main.async {
                 RealmService.deleteAll()
