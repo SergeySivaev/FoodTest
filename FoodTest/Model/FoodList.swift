@@ -54,5 +54,6 @@ class Recipe: Object, Decodable {
     override static func primaryKey() -> String? {
         return "title"
     }
+    
 }
 

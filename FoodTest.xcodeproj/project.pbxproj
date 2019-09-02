@@ -14,6 +14,10 @@
 		FA03A660230465DE00D27972 /* AlamofireImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03A65F230465DE00D27972 /* AlamofireImageService.swift */; };
 		FA03A66423052A6A00D27972 /* FoodListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA03A66223052A6A00D27972 /* FoodListViewController.xib */; };
 		FA056720230BEB59001683F0 /* ReachabilityConection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05671F230BEB59001683F0 /* ReachabilityConection.swift */; };
+		FA7CB186231D1324003829A4 /* FoodTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CB185231D1324003829A4 /* FoodTestTests.swift */; };
+		FA7CB18F231D1371003829A4 /* FoodListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CB18E231D1371003829A4 /* FoodListTests.swift */; };
+		FA7CB192231D2888003829A4 /* FoodListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CB191231D2888003829A4 /* FoodListPresenterTests.swift */; };
+		FA7CB195231D488A003829A4 /* FoodListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CB194231D488A003829A4 /* FoodListViewControllerTests.swift */; };
 		FAAD91502302EA6F006A5185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD914F2302EA6F006A5185 /* AppDelegate.swift */; };
 		FAAD91522302EA6F006A5185 /* FoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD91512302EA6F006A5185 /* FoodListViewController.swift */; };
 		FAAD91552302EA6F006A5185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD91532302EA6F006A5185 /* Main.storyboard */; };
@@ -30,6 +34,16 @@
 		FAF95576230683A600B4A264 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF95575230683A600B4A264 /* RealmService.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FA7CB188231D1324003829A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAAD91442302EA6F006A5185 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAAD914B2302EA6F006A5185;
+			remoteInfo = FoodTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		225064A5D749A718DE018FB8 /* Pods_FoodTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9B0267353CCE450A55487F /* Pods-FoodTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTest.debug.xcconfig"; path = "Target Support Files/Pods-FoodTest/Pods-FoodTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +54,12 @@
 		FA03A65F230465DE00D27972 /* AlamofireImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireImageService.swift; sourceTree = "<group>"; };
 		FA03A66223052A6A00D27972 /* FoodListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodListViewController.xib; sourceTree = "<group>"; };
 		FA05671F230BEB59001683F0 /* ReachabilityConection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityConection.swift; sourceTree = "<group>"; };
+		FA7CB183231D1323003829A4 /* FoodTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7CB185231D1324003829A4 /* FoodTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTestTests.swift; sourceTree = "<group>"; };
+		FA7CB187231D1324003829A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7CB18E231D1371003829A4 /* FoodListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListTests.swift; sourceTree = "<group>"; };
+		FA7CB191231D2888003829A4 /* FoodListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListPresenterTests.swift; sourceTree = "<group>"; };
+		FA7CB194231D488A003829A4 /* FoodListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewControllerTests.swift; sourceTree = "<group>"; };
 		FAAD914C2302EA6F006A5185 /* FoodTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAD914F2302EA6F006A5185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAD91512302EA6F006A5185 /* FoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +79,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FA7CB180231D1323003829A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAAD91492302EA6F006A5185 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,7 +117,6 @@
 		FA03A65723044E0E00D27972 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FAF1286F2305A2CF002A4943 /* MainRouter.swift */,
 				FAAD91512302EA6F006A5185 /* FoodListViewController.swift */,
 				FA03A66223052A6A00D27972 /* FoodListViewController.xib */,
 				FAF12867230560F0002A4943 /* FoodDetailViewController.swift */,
@@ -111,10 +137,55 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FA7CB184231D1324003829A4 /* FoodTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA7CB193231D4851003829A4 /* View */,
+				FA7CB190231D2847003829A4 /* Presenter */,
+				FA7CB18D231D132E003829A4 /* Model */,
+				FA7CB185231D1324003829A4 /* FoodTestTests.swift */,
+				FA7CB187231D1324003829A4 /* Info.plist */,
+			);
+			path = FoodTestTests;
+			sourceTree = "<group>";
+		};
+		FA7CB18D231D132E003829A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA7CB18E231D1371003829A4 /* FoodListTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA7CB190231D2847003829A4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA7CB191231D2888003829A4 /* FoodListPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FA7CB193231D4851003829A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA7CB194231D488A003829A4 /* FoodListViewControllerTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA7CB196231D601E003829A4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FAF1286F2305A2CF002A4943 /* MainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		FAAD91432302EA6F006A5185 = {
 			isa = PBXGroup;
 			children = (
 				FAAD914E2302EA6F006A5185 /* FoodTest */,
+				FA7CB184231D1324003829A4 /* FoodTestTests */,
 				FAAD914D2302EA6F006A5185 /* Products */,
 				650C168A0BC2B74838478E8A /* Pods */,
 				36408D4FB4639912E526FD5D /* Frameworks */,
@@ -125,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				FAAD914C2302EA6F006A5185 /* FoodTest.app */,
+				FA7CB183231D1323003829A4 /* FoodTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,9 +205,10 @@
 			isa = PBXGroup;
 			children = (
 				FAAD914F2302EA6F006A5185 /* AppDelegate.swift */,
+				FAAD91672303EA32006A5185 /* Model */,
 				FA03A65723044E0E00D27972 /* View */,
 				FAAD916B23041F3E006A5185 /* Presenter */,
-				FAAD91672303EA32006A5185 /* Model */,
+				FA7CB196231D601E003829A4 /* Router */,
 				FAAD91682303EA41006A5185 /* Service */,
 				FAAD91532302EA6F006A5185 /* Main.storyboard */,
 				FAAD91562302EA71006A5185 /* Assets.xcassets */,
@@ -176,6 +249,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FA7CB182231D1323003829A4 /* FoodTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7CB18C231D1324003829A4 /* Build configuration list for PBXNativeTarget "FoodTestTests" */;
+			buildPhases = (
+				FA7CB17F231D1323003829A4 /* Sources */,
+				FA7CB180231D1323003829A4 /* Frameworks */,
+				FA7CB181231D1323003829A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA7CB189231D1324003829A4 /* PBXTargetDependency */,
+			);
+			name = FoodTestTests;
+			productName = FoodTestTests;
+			productReference = FA7CB183231D1323003829A4 /* FoodTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FAAD914B2302EA6F006A5185 /* FoodTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAAD915E2302EA71006A5185 /* Build configuration list for PBXNativeTarget "FoodTest" */;
@@ -205,6 +296,10 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = macbook;
 				TargetAttributes = {
+					FA7CB182231D1323003829A4 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = FAAD914B2302EA6F006A5185;
+					};
 					FAAD914B2302EA6F006A5185 = {
 						CreatedOnToolsVersion = 10.3;
 						SystemCapabilities = {
@@ -229,11 +324,19 @@
 			projectRoot = "";
 			targets = (
 				FAAD914B2302EA6F006A5185 /* FoodTest */,
+				FA7CB182231D1323003829A4 /* FoodTestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FA7CB181231D1323003829A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAAD914A2302EA6F006A5185 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,6 +407,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FA7CB17F231D1323003829A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7CB186231D1324003829A4 /* FoodTestTests.swift in Sources */,
+				FA7CB18F231D1371003829A4 /* FoodListTests.swift in Sources */,
+				FA7CB195231D488A003829A4 /* FoodListViewControllerTests.swift in Sources */,
+				FA7CB192231D2888003829A4 /* FoodListPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAAD91482302EA6F006A5185 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,6 +440,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FA7CB189231D1324003829A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAAD914B2302EA6F006A5185 /* FoodTest */;
+			targetProxy = FA7CB188231D1324003829A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		FAAD91532302EA6F006A5185 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -346,6 +468,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FA7CB18A231D1324003829A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7378LP24FU;
+				INFOPLIST_FILE = FoodTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = my.FoodTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodTest.app/FoodTest";
+			};
+			name = Debug;
+		};
+		FA7CB18B231D1324003829A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7378LP24FU;
+				INFOPLIST_FILE = FoodTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = my.FoodTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodTest.app/FoodTest";
+			};
+			name = Release;
+		};
 		FAAD915C2302EA71006A5185 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -505,6 +667,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FA7CB18C231D1324003829A4 /* Build configuration list for PBXNativeTarget "FoodTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7CB18A231D1324003829A4 /* Debug */,
+				FA7CB18B231D1324003829A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FAAD91472302EA6F006A5185 /* Build configuration list for PBXProject "FoodTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
